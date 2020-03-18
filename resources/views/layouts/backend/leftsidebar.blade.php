@@ -13,11 +13,18 @@
                     </ul>
                 </li>
                 <li class="has_sub">
+                    <a href="javascript:void(0);" class="waves-effect"><i class="ti-home"></i> <span> Prescription </span> <span class="menu-arrow"></span></a>
+                    <ul class="list-unstyled">
+                        <li><a href="{{route('admin.prescription')}}">Prescription</a></li>
+                    </ul>
+                </li>
+                <li class="has_sub">
                     <a href="javascript:void(0);" class="waves-effect"><i class="ti-paint-bucket"></i> <span> All Data Entry </span> <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled">
                         <li><a href="{{route('admin.maidicene')}}">Madicine</a></li>
                         <li><a href="{{route('admin.diseases')}}">Diseases</a></li>
                         <li><a href="{{route('admin.exams')}}">Patient Exams</a></li>
+                        <li><a href="{{route('admin.company')}}">Medicine Company</a></li>
                     </ul>
                 </li>
             </ul>

@@ -13,10 +13,16 @@ class DashboardController extends Controller
     public function maidicene(){
         return view('admin.data_entry.madicine');
     }
-    public function diseases(){
+    public function exams(){
         return view('admin.data_entry.exams');
     }
-    public function exams(){
+    public function diseases(){
         return view('admin.data_entry.diseases');
+    }
+    public function company(){
+        return view('admin.data_entry.company');
+    }
+    public function prescription(){
+        return view('admin.prescription.index');
     }
 }

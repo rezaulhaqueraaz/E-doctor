@@ -8,7 +8,7 @@
 @endpush
 @section('content')
     <div class="container">
-        Diseases
+        <diseases-component></diseases-component>
     </div>
 @endsection
 @push('js')

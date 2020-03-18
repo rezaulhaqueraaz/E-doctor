@@ -135,14 +135,14 @@ function($) {
         }
         $.notify({
             title: title,
-            text: 'Are you sure you want to do nothing?<div class="clearfix"></div><br><a class="btn btn-sm btn-white yes">Yes</a> <a class="btn btn-sm btn-danger no">No</a>',
+            text: 'Are you sure you want to do Delete?<div class="clearfix"></div><br><a class="btn btn-sm btn-white yes">Yes</a> <a class="btn btn-sm btn-danger no">No</a>',
             image: "<i class='"+icon+"'></i>"
         }, {
             style: 'metro',
             className: style,
             globalPosition:position,
             showAnimation: "show",
-            showDuration: 0,
+            showDuration: 1,
             hideDuration: 0,
             autoHide: false,
             clickToHide: false
@@ -152,12 +152,12 @@ function($) {
           //programmatically trigger propogating hide event
           $(this).trigger('notify-hide');
         });
-        $(document).on('click', '.notifyjs-metro-base .yes', function() {
-          //show button text
-          alert($(this).text() + " clicked!");
-          //hide notification
-          $(this).trigger('notify-hide');
-        });
+        // $(document).on('click', '.notifyjs-metro-base .yes', function () {
+        //   //show button text
+        //     deletedata
+        //   //hide notification
+        //   $(this).trigger('notify-hide');
+        // });
     },
     //init - examples
     Notification.prototype.init = function() {
