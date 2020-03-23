@@ -24,6 +24,9 @@ route::group(['as'=>'admin.','prefix'=>'admin','namespace'=>'Admin'], function (
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
     Route::get('/prescription', 'DashboardController@prescription')->name('prescription');
+    Route::post('/query/medicine/query', 'DashboardController@querymedicine')->name('prescription.medicine');
+
+
 
 
     Route::get('/data/exams', 'DashboardController@exams')->name('exams');

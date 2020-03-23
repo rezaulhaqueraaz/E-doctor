@@ -11,11 +11,15 @@ class MedicineController extends Controller
 
     public function store(Request $request){
         $name= $request->name;
+        $medicineType= $request->medicineType;
+        $mg= $request->mgml;
         $generic= $request->genericName;
         $companyname= $request->company;
         $mdsc= $request->medicineDsc;
         $medicine=new Medicine();
         $medicine->MedicineName=$name;
+        $medicine->type=$medicineType;
+        $medicine->Mg_ml=$mg;
         $medicine->GenericName=$generic;
         $medicine->company_id=$companyname;
         $medicine->MedicineDsc=$mdsc;

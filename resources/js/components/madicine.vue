@@ -14,6 +14,32 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="col-md-3 control-label" for="mg">MG/ML</label>
+                            <div class="col-md-9">
+                                <input type="text" v-model="mgml" id="mg"  class="form-control" placeholder="Mg/ml">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Medicine Type</label>
+                            <div class="col-md-9">
+                                <select v-model="medicineTypee" id="dsf" class="form-control">
+                                    <option value="Tab">Tablet</option>
+                                    <option value="Shyrup">Shyrup</option>
+                                    <option value="Sus">Suspension</option>
+                                    <option value="Inj">Injection</option>
+                                    <option value="Drop">Drop</option>
+                                    <option value="Iv">Iv</option>
+                                    <option value="Cap">Capsul</option>
+                                    <option value="Ointment">Ointment</option>
+                                    <option value="Suppository">Suppository</option>
+                                    <option value="Lotion">Lotion</option>
+                                    <option value="Gel">Gel</option>
+                                    <option value="Eye-Drop">Eye Drop</option>
+                                    <option value="Spray">Eye Drop</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="col-md-3 control-label" for="example-email">Generic Name</label>
                             <div class="col-md-9">
                                 <input type="text" v-model="GenericName" id="example-email"  class="form-control" placeholder="Generic Name">
@@ -41,7 +67,7 @@
                             </div>
                         </div>
                         <ul>
-                            <li>{{name}}</li>
+                            <li>{{medicineTypee}}-{{name}}-{{mgml}}</li>
                             <li>{{GenericName}}</li>
                             <li>{{MedicineDesc}}</li>
                         </ul>
@@ -68,6 +94,7 @@
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Name</th>
+                                    <th scope="col">MG/ML</th>
                                     <th scope="col">Generic Name</th>
                                     <th scope="col">Action</th>
 
@@ -76,7 +103,8 @@
                                 <tbody>
                                 <tr v-for="(data,index) in MedicineInfo">
                                     <th scope="row">{{index+1}}</th>
-                                    <td>{{data.MedicineName}}</td>
+                                    <td>{{data.type}}-{{data.MedicineName}}</td>
+                                    <td>{{data.Mg_ml}}</td>
                                     <td>{{data.GenericName}}</td>
                                     <td>
                                         <a href=""><span class="badge badge-primary"><i class="ion-compose"></i></span></a>
@@ -104,6 +132,8 @@
             return{
                 name:'',
                 GenericName:'',
+                medicineTypee:'',
+                mgml:'',
                 CompanyNamee:'',
                 MedicineDesc:'',
                 CompanyInfo:[],
@@ -119,6 +149,8 @@
             addmadicine(){
                 axios.post('/admin/data/add/medicine', {
                     name: this.name,
+                    medicineType: this.medicineTypee,
+                    mgml: this.mgml,
                     genericName: this.GenericName,
                     company: this.CompanyNamee,
                     medicineDsc: this.MedicineDesc
@@ -127,6 +159,8 @@
                        this.MedicineInfo=this.getMedicine();
                        this.GenericName='';
                        this.name='';
+                       this.medicineTypee='',
+                       this.mgml='',
                        this.MedicineDesc='';
                        this.successAlert=response.data.Success;
                     })

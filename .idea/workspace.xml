@@ -2,38 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cc43d59-49f7-45eb-9657-0770b5f6590d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Company.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Disease.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exam.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ComapnyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MedicineController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Medicine.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_095226_create_companies_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_193925_create_medicines_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_16_030025_create_diseases_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_16_074406_create_exams_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/assets/css/jquery-confirm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backend/assets/js/jquery-confirm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/DiseaseComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ExamComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/MedicineComapanyComponet.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/PaginationComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Prescription_component/PrescriptionComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/madicine.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/data_entry/company.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/prescription/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/assets/js/jquery.core.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backend/assets/js/jquery.core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MedicineController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MedicineController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_15_193925_create_medicines_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_193925_create_medicines_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/data_entry/diseases.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/data_entry/diseases.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/data_entry/exams.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/data_entry/exams.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/data_entry/madicine.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/data_entry/madicine.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/backend/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/backend/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/backend/leftsidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/backend/leftsidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Prescription_component/PrescriptionComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Prescription_component/PrescriptionComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/madicine.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/madicine.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/prescription/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/prescription/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -208,6 +184,14 @@
       <workItem from="1584369473413" duration="17526000" />
       <workItem from="1584422476718" duration="8431000" />
       <workItem from="1584439547316" duration="2077000" />
+      <workItem from="1584496774775" duration="971000" />
+      <workItem from="1584670499463" duration="3554000" />
+      <workItem from="1584679539989" duration="8616000" />
+      <workItem from="1584731873711" duration="615000" />
+      <workItem from="1584784611111" duration="7988000" />
+      <workItem from="1584840697108" duration="5506000" />
+      <workItem from="1584854964473" duration="9977000" />
+      <workItem from="1584927840839" duration="3592000" />
     </task>
     <servers />
   </component>
@@ -242,16 +226,5 @@
       <screen x="0" y="0" width="1360" height="768" />
     </state>
     <state x="514" y="308" key="NewPhpFileDialog/0.0.1360.768@0.0.1360.768" timestamp="1584164028834" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/resources/js/components/Prescription_component/PrescriptionComponent.vue</url>
-          <line>3</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

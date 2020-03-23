@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Medicine;
 use Illuminate\Http\Request;
+use Symfony\Component\Console\Input\Input;
 
 class DashboardController extends Controller
 {
@@ -24,5 +26,10 @@ class DashboardController extends Controller
     }
     public function prescription(){
         return view('admin.prescription.index');
+    }
+    public function querymedicine(Request $request){
+        $data=$request->name;
+        $results=Medicine::where('MedicineName','like',$data.'%')->get();
+        return response()->json(['s'=>$results]);
     }
 }

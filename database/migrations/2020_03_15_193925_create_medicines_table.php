@@ -17,6 +17,8 @@ class CreateMedicinesTable extends Migration
             $table->id();
             $table->string('MedicineName');
             $table->string('GenericName')->nullable();
+            $table->string('Mg_ml')->nullable();
+            $table->string('type')->nullable();
             $table->longText('MedicineDsc')->nullable();
             $table->unsignedBigInteger('company_id')->nullable();
             $table->timestamps();
